@@ -5,4 +5,4 @@ Route::get('/', function () {
 });
 
 // admin + home
-require __DIR__ . '/admin.php';
+require __DIR__ . '/admin_routes.php';

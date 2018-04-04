@@ -70,4 +70,36 @@ Route::group(['as' => $as, 'middleware' => ['auth', 'permission:ADMIN_PANEL']], 
 	Route::get(config('laraadmin.adminRoute') . '/backup_dt_ajax', 'LA\BackupsController@dtajax');
 	Route::post(config('laraadmin.adminRoute') . '/create_backup_ajax', 'LA\BackupsController@create_backup_ajax');
 	Route::get(config('laraadmin.adminRoute') . '/downloadBackup/{id}', 'LA\BackupsController@downloadBackup');
+
+	/* ================== Table_hospitals ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/table_hospitals', 'LA\Table_hospitalsController');
+	Route::get(config('laraadmin.adminRoute') . '/table_hospital_dt_ajax', 'LA\Table_hospitalsController@dtajax');
+
+	/* ================== Table_doctors ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/table_doctors', 'LA\Table_doctorsController');
+	Route::get(config('laraadmin.adminRoute') . '/table_doctor_dt_ajax', 'LA\Table_doctorsController@dtajax');
+
+	/* ================== Table_patients ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/table_patients', 'LA\Table_patientsController');
+	Route::get(config('laraadmin.adminRoute') . '/table_patient_dt_ajax', 'LA\Table_patientsController@dtajax');
+
+	/* ================== Table_services ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/table_services', 'LA\Table_servicesController');
+	Route::get(config('laraadmin.adminRoute') . '/table_service_dt_ajax', 'LA\Table_servicesController@dtajax');
+
+	/* ================== Table_patients ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/table_patients', 'LA\Table_patientsController');
+	Route::get(config('laraadmin.adminRoute') . '/table_patient_dt_ajax', 'LA\Table_patientsController@dtajax');
+
+	/* ================== Table_hospitals ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/table_hospitals', 'LA\Table_hospitalsController');
+	Route::get(config('laraadmin.adminRoute') . '/table_hospital_dt_ajax', 'LA\Table_hospitalsController@dtajax');
+
+	/* ================== Table_doctors ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/table_doctors', 'LA\Table_doctorsController');
+	Route::get(config('laraadmin.adminRoute') . '/table_doctor_dt_ajax', 'LA\Table_doctorsController@dtajax');
+
+	/* ================== Table_services ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/table_services', 'LA\Table_servicesController');
+	Route::get(config('laraadmin.adminRoute') . '/table_service_dt_ajax', 'LA\Table_servicesController@dtajax');
 });
