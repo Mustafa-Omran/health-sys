@@ -17,6 +17,7 @@
         <script src="{{ asset('/MO/js/contactform.js') }}"></script>
         <script src="{{ asset('/MO/js/custom.js') }}"></script>
         <script src="{{ asset('/MO/js/jquery.easing.min.js') }}"></script>
+        
 
     </head>
 
@@ -39,25 +40,56 @@
                             </div>
                             <div class="collapse navbar-collapse navbar-right" id="myNavbar">
                                 <ul class="nav navbar-nav">
-                                    <li class="active">
-                                        <a href="#banner">Home</a>
-                                    </li>
-                                    <li class="">
-                                        <a href="#service">Services</a>
+                                    <li class="active"><h2>
+                                        <a href="#banner">الصفحه الرئيسيه</a>
+                                    </h2></li>
+                                    <li class="" style="color:white; font-weight:bold;padding-top:15px;font-size:17px">
+                                        الخدمات
+                                            <ul class="main-navigation">
+  <li><h2> <a href="#">تحاليل و أ شعة</a>
+ <ul><li><a href="#">57357</a></li>
+      <li><a href="#">500500</a>
+      </li>
+      <li><a href="#">معهد الأورام</a>
+      </li>
+        </ul> </h2>
+      </li>
+  <li><a href="#">العمليات</a>
+    <ul>
+      <li><a href="#">57357</a></li>
+      <li><a href="#">500500</a>
+      </li>
+      <li><a href="#">معهد الأورام</a>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#">الأدويه</a>
+    <ul>
+     <li><a href="#">57357</a></li>
+      <li><a href="#">500500</a>
+      </li>
+      <li><a href="#">معهد الأورام</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+                                        
+                                      
+                                        
                                     </li>
                                     <li class="">
                                       <!-- <a href="#hospitals">Hospitals <i class="fa fa-angle-down"></i></a>                   -->
-                                        <a href="#hospitals">Hospitals </a>
+                                        <a href="#hospitals">المستشفيات </a>
                                     </li>
                                     <li class="">
-                                        <a href="#about">About</a>
+                                        <a href="#about">من نحن</a>
                                     </li>
                                     <li class="">
-                                        <a href="#contact">Contact</a>
+                                        <a href="#contact">إتصل بنا</a>
                                     </li>
                                     <li class="">
                                         @if (Auth::guest())
-                                        <a href="{{ url('/login') }}">Login</a>
+                                        <a href="{{ url('/login') }}">تسجيل الدخول</a>
                                         @else
                                         <a href="{{ url(config('laraadmin.adminRoute')) }}">{{ Auth::user()->name }}</a>
                                         @endif
@@ -74,10 +106,10 @@
                                 <img src="{{asset('/MO/img/logo.png')}}" class="img-responsive">
                             </div>
                             <div class="banner-text text-center">
-                                <h1 class="white">Healthcare at your desk!!</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    <br>tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <a href="#contact" class="btn btn-appoint">Make an Appointment.</a>
+                                <h1 class="white">!! الرعايه الصحيه علي مكتبك</h1>
+                                <p>تجميعه من أكبر مستشفيات ومراكز الأورام في مصر
+                                    <br>عندمــــــــــــا تقــــــــــاوم مـرضــــــك</p>
+                                <a href="#contact" class="btn btn-appoint"><H2>إجــراء مقــابـله</H2></a>
                             </div>
                             <div class="overlay-detail text-center">
                                 <a href="#service">
@@ -87,17 +119,18 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
+            
         </section>
 
         <section id="service" class="section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-4">
-                        <h2 class="ser-title">Our Service</h2>
+                        <h2 class="ser-title">خدماتنا</h2>
                         <hr class="botm-line">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris cillum.</p>
+                        <p> <H1>بعض الخدمات التي تقدمها مستشفيات الأورام</H1> </p>
                     </div>
                     <div class="col-md-4 col-sm-4">
                         <div class="service-info">
@@ -207,11 +240,19 @@
                     <div class="col-md-4 col-sm-4">
                         <div class="testi-details">
                             <!-- Paragraph -->
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua.</p>
+                            <p>يضم المستشفى 260 سرير و 60 سرير في العيادات الداخلية فرع محافظة طنطا بمنطقة دلتا مصر، والتي تبعد بحوالي 90 كم من القاهرة.
+
+تقدم الصيدلة الإكلينيكية المتخصصة مجالاً واسعاً من الخدمات منها:
+
+خدمات العيادات الخارجية، تركيب الأدوية، اعطاء الادوية عن طريق الوريد، وإدارة الألم، وخدمات المعلومات الأدوية، وخدمات الدعم الغذائي، مضاعفة الجرعات، تعليم وتثقيف المرضى، والرعاية الملطفة.
+وحدات العناية المركزة و زراعة نخاع العظمى
+</p>
                         </div>
                         <div class="testi-info">
-                            <h3>57357
+                            <h3>
+                                <a href="https://www.57357.org/" target="_blank">
+                                                                57357
+                                </a>
                                 <span></span>
                             </h3>
                         </div>
@@ -219,11 +260,14 @@
                     <div class="col-md-4 col-sm-4">
                         <div class="testi-details">
                             <!-- Paragraph -->
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua.</p>
+                            <p>يقوم المعهد القومي للأورام، التابع لجامعة القاهرة، بالاشتراك مع مؤسسة المعهد القومي للأورام الجديد (500500)، و هي مؤسسه لا تهدف للربح ومسجلة بوزارة التضامن برقم 587 لسنة 2010 ، بإنشاء مقر المعهد القومي للأورام الجديد في مدينة الشيخ زايد بالجيزة، على مساحة 41 فدان منحتها جامعة القاهرة، لدعم و تطوير تشخيص وعلاج مرضى السرطان بمصر والمنطقة العربية. و يتم انشاء المشروع على اعلى طراز إنشائي، و مدعم بأحدث الأجهزة الطبية المستخدمة في هذا التخصص عالميا، و بطاقة أسرة تصل الى 1000 سرير (اطفال – كبار)، مقسمة على ثلاث مراحل، حتى يستطيع المعهد تقديم خدماته لمعظم المرضى الغير قادرين على تلقى العلاج اللازم بمصر والمنطقة العربية. وقد أنشئ المعهد القومي للأورام، في مبناه  الحالي بشارع قصر العيني، في عام 1969، ككلية تابعة لجامعة القاهرة، وانفرد منذ حينها بدور قومي فريد و متميز</p>
                         </div>
                         <div class="testi-info">
-                            <h3>500500
+                            <h3>
+                                <a href="http://www.500500egypt.org/" target="_blank">
+                                                               500500
+
+                                </a>
                                 <span></span>
                             </h3>
                         </div>
@@ -231,11 +275,15 @@
                     <div class="col-md-4 col-sm-4">
                         <div class="testi-details">
                             <!-- Paragraph -->
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua.</p>
+                            <p><H1> أعرق صرح تعليمي متخصص في مجال الأورام 
+                                معتمد من الهيئه القوميه لضمان جودة التعليم و الإعتماد </H1></p>
                         </div>
                         <div class="testi-info">
-                            <h3>Oncology institute
+                            <h3>
+                                <a href="http://www.nci.cu.edu.eg/" target="_blank">
+                                Oncology institute
+                                
+                                </a>
                                 <span></span>
                             </h3>
                         </div>
@@ -385,9 +433,8 @@
                             </div>
                             <div class="info-sec">
                                 <ul class="quick-info">
-                                    <li>
-                                        <a href="index.html">
-                                            <i class="fa fa-circle"></i>Home</a>
+                                    <li class="active">
+                                        <a href="#banner">Home</a>
                                     </li>
                                     <li>
                                         <a href="#service">
