@@ -40,19 +40,19 @@
                             </div>
                             <div class="collapse navbar-collapse navbar-right" id="myNavbar">
                                 <ul class="nav navbar-nav">
-                                    <li class="active"><h2>
+                                    <li class="active">
                                         <a href="#banner">الصفحه الرئيسيه</a>
-                                    </h2></li>
+                                </li>
                                     <li class="" style="color:white; font-weight:bold;padding-top:15px;font-size:17px">
                                         الخدمات
                                             <ul class="main-navigation">
-  <li><h2> <a href="#">تحاليل و أ شعة</a>
+  <li> <a href="#">تحاليل و أ شعة</a>
  <ul><li><a href="#">57357</a></li>
       <li><a href="#">500500</a>
       </li>
       <li><a href="#">معهد الأورام</a>
       </li>
-        </ul> </h2>
+        </ul>
       </li>
   <li><a href="#">العمليات</a>
     <ul>
